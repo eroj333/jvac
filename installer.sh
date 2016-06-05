@@ -1,3 +1,3 @@
 
 # Install ImageMagick
-apt-get install imagemagick
+apt-get -y install imagemagick
