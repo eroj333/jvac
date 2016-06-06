@@ -1,5 +1,5 @@
 '''
-Download Today's newspaper from Kantipur.
+Fetch the epaper for current day.
 '''
 
 import urllib2
