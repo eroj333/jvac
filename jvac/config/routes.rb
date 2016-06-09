@@ -5,6 +5,15 @@ Jvac::Application.routes.draw do
 
   match '/about' , :to => 'pages#about'
 
+  match  '/contact', :to =>'pages#contact'
+
+  match  '/login', :to =>'pages#login'
+
+  match  '/signup', :to =>'pages#signup'
+
+  match  '/more', :to =>'pages#more'
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

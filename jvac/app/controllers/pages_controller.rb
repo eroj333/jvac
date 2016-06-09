@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
+
   def home
-  	@title ="Home"
+  	@title = "Home"
   end
 
   def features
@@ -8,6 +9,24 @@ class PagesController < ApplicationController
   end
 
   def about
-  	@title ="About"
+  	@title = "About"
   end
+
+   def contact
+    @title = "Contact"
+     end
+
+     def login
+      @title = "LogIn"
+    end
+
+    def signup
+      @title = "SignUp"
+    end
+
+    def more
+    @title = "More"
+    end
+
+
 end

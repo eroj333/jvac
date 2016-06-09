@@ -1,6 +1,6 @@
 module ApplicationHelper
 	def title
-		base_title="Site name"
+		base_title="JVac"
 		if @title.nil?
 			base_title
 		else
