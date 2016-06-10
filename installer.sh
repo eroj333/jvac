@@ -18,6 +18,10 @@ apt-get -y install
 
 # Install Tesseract
 
+
 # Install the python binding for tesseract
 
 
+# Install Ruby
+
+# Install Rails
