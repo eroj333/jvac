@@ -5,9 +5,14 @@ $highlight:#7ac483;
 $grey_background:#f2f1f8;
 $grey_copy:#b9b7c6;
 $dark_grey:#3f3d4e;
+$dark_section :#34314c;
 
 //------------------Global-styles-------------------//
 
+ *{
+
+  box-sizing:border-box;
+}
 
 body {
   margin:0;
@@ -79,10 +84,7 @@ body {
     span {
     font-weight:400;
 
-    }
-
-
-
+        }
   }
   nav {
     float :right;
@@ -138,35 +140,34 @@ body {
   }
   nav.active{
     display:block;
-    width:90%;
+    width:100%;
     a{
       text-align:center;
       display:block;
       padding:1em 0;
       border-bottom:1px solid $highlight;
-      &:last-child {
-        border-bottom:none;
+
       }
 
-    }
+
+
+  }
+
 
 
     .button_smaller {
-      margin:1em;
-      padding:.3rem 1.5rem;
-      width:10%;
-      margin-left:0.5rem;
-      float:right;
-
-
+      margin:1rem;
+      padding:.3rem 2rem;
+      width:80%;
     }
-  }
+
+
 
 .menu {
     display:block;
     float:right;
 
-    i{
+    i {
       font-size:1.5em;
       color:$highlight;
       padding-top:.2em;
@@ -211,13 +212,24 @@ body {
     span {
     font-weight:400;
 
-    }
+        }
+  }
 
+
+  nav {
+    float :right;
+    a {
+    color:$white;
+    font-weight:700;
+    text-decoration:none;
+    margin-left: 0rem;
+    }
 
 
   }
 
 .content {
+  margin:1rem;
   padding:10.85rem 0 13.6rem 0;
   .title, .sub_title {
     color:$white;
@@ -249,5 +261,56 @@ body {
 
   }
 }
+}
 
+
+
+
+//------------Second-Section-Design---------------//
+
+
+//------------------Features-styles-------------------//
+
+#features {
+  background:$grey_background;
+  padding:1rem 0 18rem 0;
+  position:relative;
+    .feature{
+      background:$white;
+      width:31%;
+      float:left;
+      margin:2rem 1% 0 1%;
+      padding:2rem 2.5%;
+      text-align:center;
+      position:relative;
+      border-radius:1rem;
+      &:hover {
+      -webkit-box-shadow:0px 0px 67px 0px rgba(4, 6, 9, 0.25);
+      -moz-box-shadow:0px 0px 67px 0px rgba(4, 6, 9, 0.25);
+      box-shadow:0px 0px 67px 0px rgba(4, 6, 9, 0.25);
+
+    }
+  }
+
+
+    h3{
+      margin:0;
+      font-size:1.5rem;
+      color:$dark_grey;
+    }
+    h1 {
+      padding-top:0.5rem;
+      text-align:center;
+    }
+
+
+
+}
+
+//--------------Samller displays-----------//
+@media only screen and (max-width:533px)
+{
+  .button_secondary {
+    line-height:1rem;
+  }
 }
