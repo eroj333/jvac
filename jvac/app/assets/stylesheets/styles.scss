@@ -1,98 +1,95 @@
 //------------------Variables-------------------//
 
-$white:#ffffff;
-$highlight:#7ac483;
-$grey_background:#f2f1f8;
-$grey_copy:#b9b7c6;
-$dark_grey:#3f3d4e;
-$dark_section :#34314c;
+$white: #fff;
+$highlight: #7ac483;
+$grey_background: #f2f1f8;
+$grey_copy: #b9b7c6;
+$dark_grey: #3f3d4e;
+$dark_section: #34314c;
 
 //------------------Global-styles-------------------//
 
- *{
-
-  box-sizing:border-box;
+* {
+  box-sizing: border-box;
 }
 
 body {
-  margin:0;
-  font-family:'Lato',sans-serif;
-  -webkit-font-smoothing:antialiased;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
 }
 
-.wrapper{
-  width:1140px;
-  max-width:90%;
-  margin:0 auto;
-
+.wrapper {
+  margin: 0 auto;
+  max-width: 90%;
+  width: 1140px;
 }
 
 .button {
-  border:none;
-  outline:none;
-  border-radius:2rem;
+  border: none; 
+  border-radius: 2rem;
+  color: $white;
+  font-weight: 700;
+  outline: none;
   padding: .6rem  3.5rem;
-  font-weight:700;
-  color:$white;
-  text-decoration:none;
-  text-align:center;
-
+  text-align: center;
+  text-decoration: none;
 }
 
 .button_highlight {
-  background:$highlight;
+  background: $highlight;
 }
 
 .button_highlight:hover {
-  background:#55AE3A;
+  background: #55ae3a;
 }
 
 .button_secondary {
-  background:rgba(250,250,250,0.35);
+  background: rgba(250, 250, 250, .35);
 }
 
 .button_secondary:hover {
-  background:rgba(245,245,245,0.5);
+  background: rgba(245, 245, 245, .5);
 }
+
 .button_smaller {
-  padding:.3rem 1.5rem;
+  padding: .3rem 1.5rem;
 }
 
 
 //------------------Banner-styles-------------------//
 
 .menu {
-
-  display:none;
-
+  display: none;
 }
 
 #banner {
-  background:url('/assets/banner_background.jpg');
-  background-repeat:no-repeat;
-  background-size:cover;
+  background: url('/assets/banner_background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 
   header {
-     padding :2rem 0;
+    padding: 2rem 0;
   }
+  
   #logo {
-    color:$white;
-    font-weight:700;
-    font-size:1.35rem;
-    float:left;
-    margin :0;
+    color: $white;
+    float: left;
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin: 0;
     span {
-    font-weight:400;
-
-        }
+      font-weight: 400;
+    }
   }
+
   nav {
-    float :right;
+    float: right;
     a {
-    color:$white;
-    font-weight:700;
-    text-decoration:none;
-    margin-left:2rem;
+      color: $white;
+      font-weight: 700;
+      margin-left: 2rem;
+      text-decoration: none;
     }
 
   }
@@ -100,30 +97,32 @@ body {
 
 
 .content {
-  padding:10.85rem 0 13.6rem 0;
+  padding: 10.85rem 0 13.6rem;
   .title, .sub_title {
-    color:$white;
-    text-align:center;
+    color: $white;
+    text-align: center;
 
   }
-  .title{
-    font-size:3.5rem;
-    margin:0;
+  
+  .title {
+    font-size: 3.5rem;
+    margin: 0;
   }
+
   .sub_title {
-  font-weight:400;
-  font-size:1.35rem;
-  width:500px;
-  margin:0 auto 2rem auto;
-  line-height:1.75;
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1.75;
+  margin: 0 auto 2rem;
+  width: 500px;
   }
 
   .button_wrapper {
-    text-align:center;
-    margin:3rem 0;
+    text-align: center;
+    margin: 3rem 0;
 
   .button {
-    margin:0 .75rem;
+    margin: 0 .75rem;
 
   }
      }
@@ -134,136 +133,125 @@ body {
 
 //------------------Responsive-Design-forTablets-------------------//
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
   nav {
-    display:none;
+    display: none;
   }
-  nav.active{
-    display:block;
-    width:100%;
-    a{
-      text-align:center;
-      display:block;
-      padding:1em 0;
-      border-bottom:1px solid $highlight;
 
+  nav.active {
+    display: block;
+    width: 100%;
+    a {
+      border-bottom: 1px solid $highlight;
+      display: block;
+      padding: 1em 0;
+      text-align: center;
       }
+  }
 
 
-
+  .button_smaller {
+    margin: 1rem;
+    padding: .3rem 2rem;
+    width: 80%;
   }
 
 
 
-    .button_smaller {
-      margin:1rem;
-      padding:.3rem 2rem;
-      width:80%;
-    }
-
-
-
-.menu {
-    display:block;
-    float:right;
+  .menu {
+    display: block;
+    float: right;
 
     i {
-      font-size:1.5em;
-      color:$highlight;
-      padding-top:.2em;
+      color: $highlight;
+      font-size: 1.5em;
+      padding-top: .2em;
     }
   }
 
   //---------smaller buttons to fit ----------- //
 
-.wrapper{
-  width:768px;
-  max-width:90%;
-  margin:0 auto;
+  .wrapper {
+    margin: 0 auto;
+    max-width: 90%;
+    width: 768px;
+  }
 
-}
-
-.button {
-  border:none;
-  outline:none;
-  border-radius:2rem;
-  padding: .3rem  1.75rem;
-  font-weight:700;
-  color:$white;
-  text-decoration:none;
-  text-align:center;
-
-
-}
+  .button {
+    border: none;
+    border-radius: 2rem;
+    color: $white;
+    font-weight: 700;
+    outline: none;
+    padding: .3rem  1.75rem;
+    text-align: center;
+    text-decoration: none;
+  }
 
 
  //-----------Fit to size contents ------------//
 
-#banner {
+  #banner {
 
-  header {
-     padding :1rem 0;
-  }
-  #logo {
-    font-weight:700;
-    font-size:1.2rem;
-    float:left;
-    margin :0;
-    span {
-    font-weight:400;
-
-        }
-  }
-
-
-  nav {
-    float :right;
-    a {
-    color:$white;
-    font-weight:700;
-    text-decoration:none;
-    margin-left: 0rem;
+    header {
+      padding: 1rem 0;
     }
 
-
+    #logo {
+      float: left;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin: 0;
+      span {
+        font-weight: 400;
+      }
   }
 
-.content {
-  margin:1rem;
-  padding:10.85rem 0 13.6rem 0;
-  .title, .sub_title {
-    color:$white;
-    text-align:center;
 
+    nav {
+      float: right;
+      a {
+        color: $white;
+        font-weight: 700;
+        margin-left: 0;
+        text-decoration: none;
+      }
+    }
 
-  }
-  .title{
-    font-size:2.5rem;
-    margin:0;
-  }
-  .sub_title {
-  font-weight:400;
-  font-size:1rem;
-  width:300px;
-  margin:0 auto 1rem auto;
-  line-height:1.75;
-  }
+    .content {
+      margin: 1rem;
+      padding: 10.85rem 0 13.6rem;
 
-  .button_wrapper {
-    text-align:center;
-    margin:1.5rem 0;
+      .title, .sub_title {
+        color: $white;
+        text-align: center;
+      }
 
-  .button {
-    margin:0 .75rem;
+      .title{
+        font-size: 2.5rem;
+        margin: 0;
+      }
 
-  }
-     }
+      .sub_title {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.75;
+        margin: 0 auto 1rem;
+        width: 300px;
+      }
+
+      .button_wrapper {
+        margin: 1.5rem 0;
+        text-align: center;
+
+        .button {
+          margin: 0 .75rem;
+        }
+      }
 
   }
 }
 }
-
-
 
 
 //------------Second-Section-Design---------------//
@@ -272,45 +260,45 @@ body {
 //------------------Features-styles-------------------//
 
 #features {
-  background:$grey_background;
-  padding:1rem 0 18rem 0;
-  position:relative;
-    .feature{
-      background:$white;
-      width:31%;
-      float:left;
-      margin:2rem 1% 0 1%;
-      padding:2rem 2.5%;
-      text-align:center;
-      position:relative;
-      border-radius:1rem;
-      &:hover {
-      -webkit-box-shadow:0px 0px 67px 0px rgba(4, 6, 9, 0.25);
-      -moz-box-shadow:0px 0px 67px 0px rgba(4, 6, 9, 0.25);
-      box-shadow:0px 0px 67px 0px rgba(4, 6, 9, 0.25);
+  background: $grey_background;
+  padding: 1rem 0 18rem;
+  position: relative;
 
+  .feature{
+    background: $white;
+    border-radius: 1rem;
+    float: left;
+    margin: 2rem 1% 0;
+    padding: 2rem 2.5%;
+    position: relative;
+    text-align: center;
+    width: 31%;
+
+    &:hover {
+      -moz-box-shadow: 0 0 67px 0 rgba(4, 6, 9, .25);
+      -webkit-box-shadow: 0 0 67px 0 rgba(4, 6, 9, .25);
+      box-shadow: 0 0 67px 0 rgba(4, 6, 9, .25);
     }
   }
 
 
-    h3{
-      margin:0;
-      font-size:1.5rem;
-      color:$dark_grey;
-    }
-    h1 {
-      padding-top:0.5rem;
-      text-align:center;
-    }
-
-
+  h3 {
+    color: $dark_grey;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+   
+  h1 {
+    padding-top: .5rem;
+    text-align: center;
+  }
 
 }
 
 //--------------Samller displays-----------//
-@media only screen and (max-width:533px)
+@media only screen and (max-width: 533px)
 {
   .button_secondary {
-    line-height:1rem;
+    line-height: 1rem;
   }
 }
