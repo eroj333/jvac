@@ -26,7 +26,7 @@ body {
 }
 
 .button {
-  border: none; 
+  border: 0;
   border-radius: 2rem;
   color: $white;
   font-weight: 700;
@@ -38,19 +38,23 @@ body {
 
 .button_highlight {
   background: $highlight;
+  &:hover{
+    background: #55ae3a;
+
+  }
 }
 
-.button_highlight:hover {
-  background: #55ae3a;
-}
+
 
 .button_secondary {
   background: rgba(250, 250, 250, .35);
+  &:hover {
+    background: rgba(245, 245, 245, .5);
+
+  }
 }
 
-.button_secondary:hover {
-  background: rgba(245, 245, 245, .5);
-}
+
 
 .button_smaller {
   padding: .3rem 1.5rem;
@@ -71,7 +75,7 @@ body {
   header {
     padding: 2rem 0;
   }
-  
+
   #logo {
     color: $white;
     float: left;
@@ -103,7 +107,7 @@ body {
     text-align: center;
 
   }
-  
+
   .title {
     font-size: 3.5rem;
     margin: 0;
@@ -287,7 +291,7 @@ body {
     font-size: 1.5rem;
     margin: 0;
   }
-   
+
   h1 {
     padding-top: .5rem;
     text-align: center;
