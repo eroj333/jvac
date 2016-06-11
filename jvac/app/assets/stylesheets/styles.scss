@@ -2,10 +2,10 @@
 
 $white: #fff;
 $highlight: #7ac483;
-$grey_background: #f2f1f8;
-$grey_copy: #b9b7c6;
-$dark_grey: #3f3d4e;
-$dark_section: #34314c;
+$grey-background: #f2f1f8;
+$grey-copy: #b9b7c6;
+$dark-grey: #3f3d4e;
+$dark-section: #34314c;
 
 //------------------Global-styles-------------------//
 
@@ -36,9 +36,9 @@ body {
   text-decoration: none;
 }
 
-.button_highlight {
+.button-highlight {
   background: $highlight;
-  &:hover{
+  &:hover {
     background: #55ae3a;
 
   }
@@ -46,7 +46,7 @@ body {
 
 
 
-.button_secondary {
+.button-secondary {
   background: rgba(250, 250, 250, .35);
   &:hover {
     background: rgba(245, 245, 245, .5);
@@ -56,7 +56,7 @@ body {
 
 
 
-.button_smaller {
+.button-smaller {
   padding: .3rem 1.5rem;
 }
 
@@ -102,7 +102,7 @@ body {
 
 .content {
   padding: 10.85rem 0 13.6rem;
-  .title, .sub_title {
+  .title, .sub-title {
     color: $white;
     text-align: center;
 
@@ -113,7 +113,7 @@ body {
     margin: 0;
   }
 
-  .sub_title {
+  .sub-title {
   font-size: 1.35rem;
   font-weight: 400;
   line-height: 1.75;
@@ -121,7 +121,7 @@ body {
   width: 500px;
   }
 
-  .button_wrapper {
+  .button-wrapper {
     text-align: center;
     margin: 3rem 0;
 
@@ -154,7 +154,7 @@ body {
   }
 
 
-  .button_smaller {
+  .button-smaller {
     margin: 1rem;
     padding: .3rem 2rem;
     width: 80%;
@@ -226,7 +226,7 @@ body {
       margin: 1rem;
       padding: 10.85rem 0 13.6rem;
 
-      .title, .sub_title {
+      .title, .sub-title {
         color: $white;
         text-align: center;
       }
@@ -236,7 +236,7 @@ body {
         margin: 0;
       }
 
-      .sub_title {
+      .sub-title {
         font-size: 1rem;
         font-weight: 400;
         line-height: 1.75;
@@ -244,7 +244,7 @@ body {
         width: 300px;
       }
 
-      .button_wrapper {
+      .button-wrapper {
         margin: 1.5rem 0;
         text-align: center;
 
@@ -264,7 +264,7 @@ body {
 //------------------Features-styles-------------------//
 
 #features {
-  background: $grey_background;
+  background: $grey-background;
   padding: 1rem 0 18rem;
   position: relative;
 
@@ -287,7 +287,7 @@ body {
 
 
   h3 {
-    color: $dark_grey;
+    color: $dark-grey;
     font-size: 1.5rem;
     margin: 0;
   }
@@ -302,7 +302,7 @@ body {
 //--------------Samller displays-----------//
 @media only screen and (max-width: 533px)
 {
-  .button_secondary {
+  .button-secondary {
     line-height: 1rem;
   }
 }
