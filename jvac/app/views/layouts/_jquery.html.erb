@@ -1,5 +1,27 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-
+<script src="/assets/scroll.js"></script>
 <script src="/assets/min.js"></script>
 
+
+
+
 <script src="https://use.fontawesome.com/a557c4c04f.js"></script>
+
+<script>
+$(document).ready(function(){
+  $('nav a').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname) {
+      var $target = $(this.hash);
+      $target = $target.length && $target
+      || $('[name=' + this.hash.slice(1) +']');
+      if ($target.length) {
+        var targetOffset = $target.offset().top;
+        $('html,body')
+        .animate({scrollTop: targetOffset}, 700);
+       return false;
+      }
+    }
+  });
+});
+</script>

@@ -1,4 +1,4 @@
-//------------------Variables-------------------//
+                    /*Variables*/
 
 $white: #fff;
 $highlight: #7ac483;
@@ -6,12 +6,10 @@ $grey-background: #f2f1f8;
 $grey-copy: #b9b7c6;
 $dark-grey: #3f3d4e;
 $dark-section: #34314c;
+$red-button:#EE4632 ;
 
-//------------------Global-styles-------------------//
+                    /*Global_Styles*/
 
-* {
-  box-sizing: border-box;
-}
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -37,9 +35,9 @@ body {
 }
 
 .button-highlight {
-  background: $highlight;
+  background: $red-button;
   &:hover {
-    background: #55ae3a;
+ background:#e93811;
 
   }
 }
@@ -61,7 +59,7 @@ body {
 }
 
 
-//------------------Banner-styles-------------------//
+                  /*Banner_styles*/
 
 .menu {
   display: none;
@@ -135,7 +133,10 @@ body {
 }
 
 
-//------------------Responsive-Design-forTablets-------------------//
+
+
+
+            /*Responsive_Design_for_Tablets*/
 
 @media only screen and (max-width: 768px) {
   nav {
@@ -146,7 +147,7 @@ body {
     display: block;
     width: 100%;
     a {
-      border-bottom: 1px solid $highlight;
+      border-bottom: 1px solid #e93811 ;
       display: block;
       padding: 1em 0;
       text-align: center;
@@ -167,13 +168,14 @@ body {
     float: right;
 
     i {
-      color: $highlight;
+      color: #e93811;
       font-size: 1.5em;
       padding-top: .2em;
+       transition: 2s ease;
     }
   }
 
-  //---------smaller buttons to fit ----------- //
+            /*Smaller_buttons_to_fit*/
 
   .wrapper {
     margin: 0 auto;
@@ -193,7 +195,7 @@ body {
   }
 
 
- //-----------Fit to size contents ------------//
+                /*Fit_to_Size_Contents*/
 
   #banner {
 
@@ -255,41 +257,92 @@ body {
 
   }
 }
+#features
+{
+  .cont {
+    width:768px;
+
+  }
+}
+}
+
+              /*Samller_Displays*/
+
+@media only screen and (max-width: 533px)
+{
+  .button-secondary {
+    line-height: 1rem;
+  }
+
+  #features
+{
+  .cont {
+    width:533px;
+
+  }
+}
+
 }
 
 
-//------------Second-Section-Design---------------//
+              /*Second_Section_Design*/
 
 
-//------------------Features-styles-------------------//
+              /*Features_Styles*/
 
 #features {
   background: $grey-background;
-  padding: 1rem 0 18rem;
+padding: 1rem 0 0;
   position: relative;
 
-  .feature{
-    background: $white;
-    border-radius: 1rem;
-    float: left;
-    margin: 2rem 1% 0;
-    padding: 2rem 2.5%;
-    position: relative;
-    text-align: center;
-    width: 31%;
+  .wrapper {
 
-    &:hover {
-      -moz-box-shadow: 0 0 67px 0 rgba(4, 6, 9, .25);
-      -webkit-box-shadow: 0 0 67px 0 rgba(4, 6, 9, .25);
-      box-shadow: 0 0 67px 0 rgba(4, 6, 9, .25);
+     h2{
+    color: $dark-grey;
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align:center;
+
+  }
+  .cont {
+    width:1060px;
+    height:350px;
+    margin:0 ;
+
+
+    .section1 {
+      margin-top:2rem;
+      float:left;
+      width:50%;
+      line-height:1.7rem;
+      font-size:1.2rem;
+
+
+      .img1 {
+        float:right;
+      }
+    }
+
+    .section2 {
+      clear:left;
+      float:right;
+      width:50%;
+       line-height:1.7rem;
+       font-size:1.2rem;
+
+    }
+    .section3 {
+      clear:both;
+      float:left;
+      width:50%;
+       line-height:1.7rem;
+       font-size:1.2rem;
+
+
     }
   }
 
 
-  h3 {
-    color: $dark-grey;
-    font-size: 1.5rem;
-    margin: 0;
   }
 
   h1 {
@@ -299,10 +352,14 @@ body {
 
 }
 
-//--------------Samller displays-----------//
-@media only screen and (max-width: 533px)
-{
-  .button-secondary {
-    line-height: 1rem;
-  }
+
+
+
+
+
+
+                    /*About_Styles*/
+#About{
+  background:$red-button;
+  height:350px;
 }
