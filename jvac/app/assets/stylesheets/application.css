@@ -1,48 +1,17 @@
 /*
-Error: File to import not found or unreadable: font-awesome-sprockets.
-       Load path: /home/kamal/jvac/jvac/app/assets/stylesheets
-        on line 1 of /home/kamal/jvac/jvac/app/assets/stylesheets/application.scss
-
-1: @import "font-awesome-sprockets";
-2: @import "font-awesome";
-
-Backtrace:
-/home/kamal/jvac/jvac/app/assets/stylesheets/application.scss:1
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:66:in `rescue in import'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:45:in `import'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:28:in `imported_file'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/tree/import_node.rb:37:in `css_import?'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:301:in `visit_import'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
-/home/kamal/Desktop/downloads/koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
-/home/kamal/Desktop/downloads/koala/bin/sass:18:in `load'
-/home/kamal/Desktop/downloads/koala/bin/sass:18:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: font-awesome-sprockets.\A        Load path: /home/kamal/jvac/jvac/app/assets/stylesheets\A         on line 1 of /home/kamal/jvac/jvac/app/assets/stylesheets/application.scss\A \A 1: @import \"font-awesome-sprockets\";\A 2: @import \"font-awesome\";"; }
+ * This is a manifest file that'll be compiled into application.css, which
+ * will include all the files listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets,
+ * vendor/assets/stylesheets, or vendor/assets/stylesheets of plugins, if any,
+ * can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear
+ * at the bottom of the compiled file so the styles you add here take
+ * precedence over styles defined in any styles defined in the other CSS/SCSS
+ * files in this directory. It is generally better to create a new file per
+ * style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
