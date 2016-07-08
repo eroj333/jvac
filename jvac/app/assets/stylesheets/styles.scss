@@ -6,7 +6,7 @@ $grey-background: #f2f1f8;
 $grey-copy: #b9b7c6;
 $dark-grey: #3f3d4e;
 $dark-section: #34314c;
-$red-button: #EE4632 ;
+$red-button: #e93811 ;
 
                     /*Global_Styles*/
 
@@ -37,7 +37,7 @@ body {
 .button-highlight {
   background: $red-button;
   &:hover {
-    background: #e93811;
+    background: #EE4632;
   }
 }
 
@@ -224,7 +224,7 @@ body {
       margin: 1rem;
       padding: 10.85rem 0 13.6rem;
 
-      .title, 
+      .title,
       .sub-title {
         color: $white;
         text-align: center;
