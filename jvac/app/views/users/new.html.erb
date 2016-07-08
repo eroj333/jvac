@@ -3,20 +3,18 @@
 body {
   font: 13px/20px 'Lato',MONTSERRAT, Tahoma, Verdana, sans-serif;
   color: #404040;
-  background: #ffffff;
-  /*background: #F8F8FF; */
+  background: #FFFFFF;
 }
 
 .login {
   position: relative;
-  margin: 30px auto;
+  margin: 150px auto;
   padding: 20px 20px 20px;
   width: 310px;
   /*width: 542px; */
   background: white;
   border-radius: 3px;
   text-align:center;
-  font-family:'Lato',sans-serif;
 }
 
 .login:before {
@@ -104,7 +102,8 @@ body {
 }
 
 ::-webkit-input-placeholder {
-  color: #B6BEC1;
+
+  color:#9EACB2 ;
   font-size: 15px;
 }
 
@@ -123,27 +122,28 @@ input[type=text], input[type=password] {
   border: 2px solid;
   border-color: #9EACB2;
   border-radius: 4px;
-  font-weight: 10px;
 
 }
 
 input[type=text]:focus, input[type=password]:focus {
-  border-color:  #7ac483 ;
-  outline-color:  #7ac483 ;
+
+  border-color: #00B87F;;
+  outline-color: #00B87F;;
   outline-offset: 2;
 }
 
 input[type=submit] {
-  border: 0;
-  border-radius: 2rem;
-  font-weight: 700;
-  outline: none;
-  text-color:white;
-  padding: .6rem  3.5rem;
-  text-align: center;
-  text-decoration: none;
-  background: #7ac483;
-  margin-top:1rem;
+  padding: 0 40px;
+  height: 46px;
+  font-size: 18px;
+  font-weight:600;
+  color: #fff;
+  text-shadow: none;
+  background: #00B87F;
+  border: 1px solid;
+  border-color: #07A06D;
+  border-radius: 4px;
+  margin-top:1em;
 }
 
 input[type=submit]:active {
@@ -170,25 +170,14 @@ input[type=submit]:hover {
 <%= form_for(@user) do |f| %>
   <%= render 'shared/error_messages' %>
   <div class="login">
-  <h1>SIGN UP</h1>
+  <h1><strong>J</strong>Vac</h1>
 
-    <!-- <%= f.label :name %><br /> -->
     <p><%= f.text_field :name, placeholder: "Name" %></p>
-
-
-    <!-- # <%= f.label :email %><br /> -->
     <p><%= f.text_field :email, placeholder: "Email" %></p>
-
-
-    <!-- # <%= f.label :password %><br /> -->
     <p><%= f.password_field :password, placeholder: "Password"  %></p>
-
-
-    <!-- # <%= f.label :password_confirmation, "Confirmation" %><br /> -->
     <p><%= f.password_field :password_confirmation, placeholder: "Confirm"  %></p>
 
-  <div class="actions" >
-     <!--<p class="submit"><%= f.submit "Sign up" %></p> -->
+  <div class="actions">
     <%= f.submit "Sign Up" %>
   </div>
 </div>
