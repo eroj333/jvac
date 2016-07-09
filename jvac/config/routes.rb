@@ -2,9 +2,6 @@ Jvac::Application.routes.draw do
     resources :users
 
   root to: 'pages#home'
-
-  match '/about', to:  'pages#about'
-  match  '/contact', to: 'pages#contact'
   match  '/login', to: 'pages#login'
   match  '/signup', to: 'users#new'
 
