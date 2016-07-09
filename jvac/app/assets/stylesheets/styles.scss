@@ -437,18 +437,20 @@ a.slide_btn {
   margin: 0 auto;
   max-width: 2000px;
   position: relative;
-  top: -510px;
+  top: -800px;
 }
 
 .previous_btn {
+  padding-top:2rem;
   bottom: 0;
-  left: 100px;
+  left: 1150px;
   margin: auto;
   position: absolute;
   top: 0;
 }
 
 .next_btn {
+  padding-top:2rem;
   bottom: 0;
   margin: auto;
   position: absolute;
@@ -458,7 +460,7 @@ a.slide_btn {
 
 .previous_btn, .next_btn {
   cursor: pointer;
-  height: 65px;
+  height: 30px;
   opacity: 0.75;
   -webkit-transition: opacity 0.4s ease-in-out;
   -moz-transition: opacity 0.4s ease-in-out;
@@ -486,7 +488,6 @@ a.slide_btn {
 
 
 .footer {
-  margin-top:3rem;
   height:350px;
   width:1350px;
   background:$highlight;
