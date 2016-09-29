@@ -17,10 +17,10 @@ apt-get -y install
 
 
 # Install Tesseract
+apt-get -y install tesseract-ocr
 
 
 # Install the python binding for tesseract
-
 
 # Install Ruby
 
