@@ -12,15 +12,9 @@ apt-get -y install
 # Install the python binding for opencv
 
 
-
-# Install Image Magick
-
-
 # Install Tesseract
 apt-get -y install tesseract-ocr
 
-
-# Install the python binding for tesseract
 
 # Install Ruby
 
