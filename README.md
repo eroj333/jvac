@@ -4,14 +4,24 @@
 ## Local Installation
 
 - Install the libraries 
-```bash
+```shell
 chmod a+x install.sh
 sudo ./install.sh
 ```
 
-- Install python modules
+- Create virtual environment.
+```shell
+virtualenv venv
+```
 
-```bash
+- Activate virtual environment.
+```shell
+source venv/bin/activate
+```
+
+- Install python modules.
+
+```shell
 pip install -r requirements.txt
 ```
 
