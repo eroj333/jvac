@@ -15,6 +15,11 @@ apt-get -y install
 # Install Tesseract
 apt-get -y install tesseract-ocr
 
+# Install PIP
+apt-get -y install python-pip
+
+# Install Virtualenv
+pip install virtualenv
 
 # Install Ruby
 
