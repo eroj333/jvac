@@ -31,6 +31,7 @@ body {
   color: $white;
   font-weight: 700;
   outline: none;
+ /* padding:10px 50px 10px 50px; */
   padding: .6rem  3.5rem;
   text-align: center;
   text-decoration: none;
@@ -53,9 +54,7 @@ body {
 
 
 
-.button-smaller {
-  padding: .3rem 1.5rem;
-}
+
 
 
                   /*Banner_styles*/
@@ -137,6 +136,9 @@ body {
             /*Responsive_Design_for_Tablets*/
 
 @media only screen and (max-width: 768px) {
+
+
+
   nav {
     display: none;
   }
@@ -152,12 +154,6 @@ body {
       }
   }
 
-
-  .button-smaller {
-    margin: 1rem;
-    padding: .3rem 2rem;
-    width: 80%;
-  }
 
 
 
@@ -289,10 +285,14 @@ body {
 
               /*Features_Styles*/
 
+
+
 #features {
-background:$grey-background;
+  background:$grey-background;
   padding: 1rem 0 0;
   position: relative;
+  width:100%;
+
 
   .wrapper {
 
@@ -314,11 +314,13 @@ background:$grey-background;
 }
 
 #features1{
-background:white;
+  background:white;
   padding: 1rem 0 0;
   position: relative;
+  width:100%;
 
   .wrapper1 {
+
 
     h2 {
       color: $dark-grey;
@@ -327,8 +329,6 @@ background:white;
       text-align:center;
 
     }
-
-
     .cont1 {
      height: 350px;
       margin: 0 ;
@@ -349,6 +349,15 @@ background:white;
 }
 
                     /*About_Styles*/
+#about_nav {
+  width:100%;
+  height:70px;
+    h2 {
+        font-size: 2rem;
+        margin-top: 2rem;
+        text-align:center;
+    }
+}
 #about {
   height:600px;
   width:1350px;
@@ -498,6 +507,7 @@ a.slide_btn {
                     /* Footer_Styles */
 
 
+#contact {
 
 .footer-distributed{
   background-color: #292c2f;
@@ -519,6 +529,7 @@ a.slide_btn {
 }
 
 /* Footer left */
+
 
 .footer-distributed .footer-left{
   width: 40%;
@@ -644,6 +655,9 @@ a.slide_btn {
   margin-right: 3px;
   margin-bottom: 5px;
 }
+}
+
+
 
     /* Responsive_Footer) */
 
