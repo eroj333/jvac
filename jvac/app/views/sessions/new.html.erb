@@ -1,0 +1,183 @@
+<style>
+
+body {
+  font: 13px/20px 'Lato',MONTSERRAT, Tahoma, Verdana, sans-serif;
+  color: #404040;
+  background: #FFFFFF;
+}
+
+.login {
+  position: relative;
+  margin: 150px auto;
+  padding: 20px 20px 20px;
+  width: 310px;
+  /*width: 542px; */
+  background: white;
+  border-radius: 3px;
+  text-align:center;
+}
+
+.login:before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+  z-index: -1;
+}
+
+.login h1 {
+  margin: -20px -20px 21px;
+  line-height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #9EACB2;
+  text-align: center;
+  text-shadow: 0 1px white;
+  border-radius: 3px 3px 0 0;
+  background-image: -webkit-linear-gradient(top, whiteffd, #eef2f5);
+  background-image: -moz-linear-gradient(top, whiteffd, #eef2f5);
+  background-image: -o-linear-gradient(top, whiteffd, #eef2f5);
+  background-image: linear-gradient(to bottom, whiteffd, #eef2f5);
+  -webkit-box-shadow: 0 1px whitesmoke;
+  box-shadow: 0 1px whitesmoke;
+}
+
+.login p {
+  margin: 20px 0 0;
+}
+
+.login p:first-child {
+  margin-top: 0;
+}
+
+.login input[type=text], .login input[type=password] {
+  width: 278px;
+}
+
+.login p.remember_me {
+  float: left;
+  margin-left: 20px;
+  line-height: 42px;
+}
+
+.login p.remember_me label {
+  font-size: 12px;
+  color: #9EACB2;
+  cursor: pointer;
+}
+
+.login p.remember_me input {
+  position: relative;
+  bottom: 1px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.login p.submit {
+  text-align: center;
+}
+
+.login-help {
+  margin: 20px 0;
+  font-size: 11px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px #2a85a1;
+}
+
+.login-help a {
+  color: #cce7fa;
+  text-decoration: none;
+}
+
+.login-help a:hover {
+  text-decoration: underline;
+}
+
+:-moz-placeholder {
+  color: #9EACB2 !important;
+  font-size: 15px;
+}
+
+::-webkit-input-placeholder {
+
+  color:#9EACB2 ;
+  font-size: 15px;
+}
+
+input {
+  font-family: 'Lato',MONTSERRAT, Tahoma, Verdana, sans-serif;
+  font-size: 12px;
+}
+
+input[type=text], input[type=password] {
+  margin: 4px;
+  padding: 0 10px;
+  width: 200px;
+  height: 46px;
+  color: #404040;
+  background: white;
+  border: 2px solid;
+  border-color: #9EACB2;
+  border-radius: 4px;
+
+}
+
+input[type=text]:focus, input[type=password]:focus {
+
+  border-color: #00B87F;;
+  outline-color: #00B87F;;
+  outline-offset: 2;
+}
+
+input[type=submit] {
+  padding: 0 40px;
+  height: 46px;
+  font-size: 18px;
+  font-weight:600;
+  color: #fff;
+  text-shadow: none;
+  background: #00B87F;
+  border: 1px solid;
+  border-color: #07A06D;
+  border-radius: 4px;
+  margin-top:1em;
+}
+
+input[type=submit]:active {
+  background: #7ac483;
+}
+
+input[type=submit]:hover {
+  background: #a2dda9;
+}
+
+.actions {
+  padding-top:1.5em;
+  font-weight: 20px !important;
+
+}
+
+
+
+.lt-ie9 input[type=text], .lt-ie9 input[type=password] {
+  line-height: 34px;
+}
+</style>
+
+
+<%= form_for(:session, :url => login_path) do |f| %>
+  <div class="login">
+  <h1><strong>J</strong>Vac</h1>
+
+    <p><%= f.text_field :email, placeholder: "Email" %></p>
+    <p><%= f.password_field :password, placeholder: "Password"  %></p>
+
+  <div class="actions">
+    <%= f.submit "LogIn" %>
+  </div>
+</div>
+<% end %>
+
