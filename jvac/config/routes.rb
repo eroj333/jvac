@@ -2,8 +2,10 @@ Jvac::Application.routes.draw do
     resources :users
 
   root to: 'pages#home'
-  match  '/login', to: 'pages#login'
+  match  '/login', to: 'sessions#new'
   match  '/signup', to: 'users#new'
+  post 'login' => 'sessions#create'
+  delete 'logout' => 'sessions#destroy'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
