@@ -25,3 +25,12 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+- Install required gems for rails
+```
+bundle install
+```
+
+- Run the server and start coding
+```
+rails server
+```
